@@ -19,8 +19,8 @@
 
 ## Acknowledgement
 
-Most code originally comes from https://github.com/artemyk/ibsgd/tree/master
+part of code originally comes from https://github.com/artemyk/ibsgd/tree/master
 
-`matrixRenyi.py` refered the code from https://github.com/SJYuCNEL/brain-and-Information-Bottleneck
+`matrixRenyi.py` referred the code from https://github.com/SJYuCNEL/brain-and-Information-Bottleneck
 
 
