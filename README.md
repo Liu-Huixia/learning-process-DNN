@@ -1,3 +1,13 @@
+# Understanding the learning process in deep neural networks with Information Bottleneck
+
+## Introduction
+
+The Information bottleneck principle posits that a good representation of the input data should retain relevant information to the task while discarding irrelevant informatioo, the objective eqation of IB can be expressed as:
+'''math
+\underset{T\in\mathcal{T}}{\min} ; I(X; T) - \beta I(Y; T),\label{IB}
+'''
+
+
 ## Code for Thesis work
 
 * `MNIST_SaveActivations.ipynb` is a jupyter notebook that trains on MNIST and saves (in a data directory) activations when run on test set inputs for each epoch.
@@ -19,8 +29,7 @@
 
 ## Acknowledgement
 
-part of code originally comes from https://github.com/artemyk/ibsgd/tree/master
-
-`matrixRenyi.py` referred the code from https://github.com/SJYuCNEL/brain-and-Information-Bottleneck
+- This code is partially based on [artemyk/ibsgd] (https://github.com/artemyk/ibsgd/tree/master).
+- The package `matrixRenyi.py` referred the code from [SJYuCNEL] (https://github.com/SJYuCNEL/brain-and-Information-Bottleneck).
 
 
