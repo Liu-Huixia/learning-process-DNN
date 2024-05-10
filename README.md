@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The Information bottleneck principle posits that a good representation of the input data should retain relevant information to the task while discarding irrelevant informatioo, the objective eqation of IB can be expressed as:
-```math
-\min; I(X ; T)-\beta I(Y ; T),
-```
+This repository presents the application of the Information Bottleneck (IB) principle in deep learning. The IB principle suggests that the learning process of Deep Neural Networks (DNNs) can be analyzed by quantifying the mutual information (MI) between the layers, the input data, and the target variables. Here, Here we demonstrate how this quantification process can be implemented in deep feedforward neural networks (D-FFNN) with classification tasks.
+
+## Overall framework
+**![](overall.png)**
 
 ## Code for Thesis work
 
