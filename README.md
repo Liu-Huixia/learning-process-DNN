@@ -3,10 +3,9 @@
 ## Introduction
 
 The Information bottleneck principle posits that a good representation of the input data should retain relevant information to the task while discarding irrelevant informatioo, the objective eqation of IB can be expressed as:
-'''math
-\underset{T\in\mathcal{T}}{\min} ; I(X; T) - \beta I(Y; T),\label{IB}
-'''
-
+```math
+\min; I(X ; T)-\beta I(Y ; T),
+```
 
 ## Code for Thesis work
 
