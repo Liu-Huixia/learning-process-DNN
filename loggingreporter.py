@@ -1,3 +1,4 @@
+#  Original code comes from https://github.com/artemyk/ibsgd/blob/master/loggingreporter.py
 from __future__ import print_function
 import tf_keras as keras
 import tf_keras.backend as K
@@ -47,13 +48,13 @@ class LoggingReporter(keras.callbacks.Callback):
                 self.layerweights.append(l.kernel)
 
 
-
     def on_epoch_end(self, epoch, logs={}):
         if self.do_save_func is not None and not self.do_save_func(epoch):
             # Don't log this epoch
             return
         
         # Get overall performance
+        # We only saved the activaities.
         loss = {}
         data = {
             'weights_norm' : [],   # L2 norm of weights
@@ -63,13 +64,6 @@ class LoggingReporter(keras.callbacks.Callback):
         }
         
         for lndx, layerix in enumerate(self.layerixs):
-            # clayer = self.model.layers[layerix]
-        
-            # data['weights_norm'].append(np.linalg.norm(K.get_value(clayer.kernel)) )
-            
-            # stackedgrads = np.stack(self._batch_gradients[lndx], axis=1)
-            # data['gradmean'    ].append(np.linalg.norm(stackedgrads.mean(axis=1)) )
-            # data['gradstd'     ].append(np.linalg.norm(stackedgrads.std(axis=1)) )
             
             if self.cfg['FULL_MI']:
                 data['activity_tst'].append(self.layerfuncs[lndx]([self.full.X,])[0])
