@@ -32,7 +32,7 @@ NOTE: Especially if you are using a Mac with python 3.7 and your Keras is 2.3.1,
 * `matrixRenyi.py` is a python file to compute the MI based on the matrix-based estimator [4].
 
 * `Plots.ipynb` is a jupyter notebook that plots all figures in this thesis.
-* 'utils.py' is a python file mainly used to load datasets. You can edit thia part as needed.
+* `utils.py` is a python file mainly used to load datasets. You can edit thia part as needed.
 * `demo.py` is a simple script showing how to compute MI between X and Y, where Y = f(X) + Noise.
 
 More details can be found in the code and comments in the corresponding files. If you have any questions and would like advice, please contact me.
