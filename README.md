@@ -5,7 +5,7 @@ Understanding the learning process in deep neural networks with Information Bott
 
 ## Introduction
 
-This repository presents the implemetation of experiments in thesis [[Understanding the learning process in deep neural networks with Information Bottleneck] (https://trepo.tuni.fi/login)], which is an application of the Information Bottleneck (IB) principle in deep learning [1]. The IB principle suggests that the learning process of Deep Neural Networks (DNNs) can be analyzed by quantifying the mutual information (MI) between the layers, the input data, and the target variables. Here, Here we demonstrate how this quantification process can be implemented in deep feedforward neural networks (D-FFNN) with classification tasks.
+This repository presents the implemetation of experiments in thesis [[Understanding the learning process in deep neural networks with Information Bottleneck](https://trepo.tuni.fi/login/)], which is an application of the Information Bottleneck (IB) principle in deep learning [1]. The IB principle suggests that the learning process of Deep Neural Networks (DNNs) can be analyzed by quantifying the mutual information (MI) between the layers, the input data, and the target variables. Here, Here we demonstrate how this quantification process can be implemented in deep feedforward neural networks (D-FFNN) with classification tasks.
 
 ## Setup
 Please start by installing Miniconda with python. Python 3.11.5 was used here.
