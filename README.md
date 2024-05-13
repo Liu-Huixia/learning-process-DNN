@@ -34,7 +34,7 @@ NOTE: Especially if you are using a Mac with python 3.7 and your Keras is 2.3.1,
 * `Plots.ipynb` is a jupyter notebook that plots all figures in this thesis.
 * `demo.py` is a simple script showing how to compute MI between X and Y, where Y = f(X) + Noise.
 
-Please see the code and comments in the corresponding files for more details.
+More details can be found in the code and comments in the corresponding files. If you have any questions and would like advice, please contact me.
 
 ## Acknowledgement
 
@@ -44,6 +44,9 @@ Please see the code and comments in the corresponding files for more details.
 ## References
 
 [1] N. Tishby, F. C. Pereira, and W. Bialek, “The information bottleneck method,” in Proc. 37th Annual Allerton Conference on Communications, Control and Computing, 1999, pp. 368–377.
+
 [2] Shwartz-Ziv, Ravid, and Naftali Tishby. "Opening the Black Box of Deep Neural Networks via Information." Information Flow in Deep Neural Networks (2022): 24.
+
 [3] Kolchinsky, Artemy, and Brendan D. Tracey. "Estimating mixture entropy with pairwise distances." Entropy 19, no. 7 (2017): 361.
+
 [4] Giraldo, Luis Gonzalo Sanchez, Murali Rao, and Jose C. Principe. "Measures of entropy from data using infinitely divisible kernels." IEEE Transactions on Information Theory 61, no. 1 (2014): 535-548.
