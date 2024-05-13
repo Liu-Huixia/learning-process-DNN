@@ -43,16 +43,6 @@ def gram_matrix(x, sigma):
     return np.exp(-dist/(2*sigma**2))  # how to apply kernel?
 
 
-
-def silverman_bandwidth(x):
-    std_dev = np.std(x)
-    interquartile_range = iqr(x)
-    n = x.shape[0]
-    scaling_factor = n ** (-1/5)
-    bandwidth = 0.9 * min(std_dev, interquartile_range / 1.34) * scaling_factor
-    return bandwidth
-
-
 def renyi_entropy(x, alpha, batch_size):
     """
     Calculate entropy for single random vector
@@ -95,22 +85,13 @@ def conditional_entropy(x, y, alpha, batch_size, tsty):
         i_x = x[idx:idx+batch_size]
         i_y = y[idx:idx+batch_size]
         i_tsty = tsty[idx:idx+batch_size]
-        # labelixs = saved_labelixs[idx:idx+batch_size]
         labelixs = {}
         for i in range(10):
             labelixs[i] = i_tsty == i
         H_LAYER_GIVEN_OUTPUT = []
 
         for label, ixs in labelixs.items():
-            # print(ixs.shape)
-            # print(i_x.shape)
-            # print(ixs.shape)
-            
-            i_x_ixs = i_x[ixs, :]
-            # sigma = np.mean(i_x_ixs)
-            # sigma = silverman_bandwidth(i_x)
-
-            
+            i_x_ixs = i_x[ixs, :]      
             k = gram_matrix(i_x_ixs, s_x)
             k = k/np.trace(k)
             eigv = np.abs(np.linalg.eigh(k)[0])

@@ -12,7 +12,7 @@ Please start by installing Miniconda with python. Python 3.11.5 was used here.
 
 Please read the requirements.txt before you run this code.
 
-NOTE: Especially if you are using a Mac with python 3.7 and your Keras is 2.3.1, you may need to update the python or packgaes.
+NOTE: if you are using a Mac with python 3.7 and your Keras is 2.3.1, you may need to update the python or packgaes.
 
 
 ## Overall guidance for this repository
